@@ -19,9 +19,9 @@ saved.
 
 
 after getting marks of part 1 i started working on my remaining part of part 1 which was not completetd.
-added new three projects and named them virajbooks.Models, virajbooks.DataAccess and virajbooks.Utility.
+added new three projects and named them vpbooks.Models, vpbooks.DataAccess and vpbooks.Utility.
 deleted Data folder from Utility and copied it to DataAccess file.
-Renamed the folder under virajbooks.Models to ViewModels.
+Renamed the folder under vp.Models to ViewModels.
 deleted migration folder
 but having errors in HomeController.cs on line 34 about namespace.
 errors in Error.cshtml for the using statements
@@ -101,6 +101,6 @@ added CoverType to the Repository and pushed to the DAtabase by creating migrati
 Performed CRUD on covertpe
 having problems in migration as it says it doesnt match my migration assembly.
 changed migration assembly still it dosnt run
-shows Build FAiled.!!!
+20221205043630_AddProductToDb.cs
 as i do not know how to fix i am going to follow ppt and start the rest.
 2022-12-05
