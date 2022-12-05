@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 using VPBookStore.Models;
 using VPBookStore.Models.ViewModels;
 
-namespace VPBookStore.Controllers
+namespace VPBookStore.Area.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
