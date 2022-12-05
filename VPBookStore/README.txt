@@ -32,8 +32,7 @@ Reviewed the appsetting.json file
 Migration added after getting error message from the package manager console that the target project doesn't match.
 changed the default project.
 New Migration Added.
-2022-11-12 
-9:58
+
 
 Added new table to the DB by creating a Category model and pushed to the DB.
 Added Migration - 20221113025410_AddDefaultIdentityMigration
