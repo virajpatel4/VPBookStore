@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VPBook.DataAccess.Repository;
+using VPBook.DataAccess.Repository.IRepository;
 using VPBookStore.DataAccess.Data;
 
 namespace VPBookStore
@@ -32,6 +34,7 @@ namespace VPBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

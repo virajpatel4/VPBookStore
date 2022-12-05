@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using VPBook.Models;
 
 namespace VPBookStore.DataAccess.Data
 {
@@ -12,5 +13,8 @@ namespace VPBookStore.DataAccess.Data
             : base(options)
         {
         }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<CoverType> CoverTypes { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
