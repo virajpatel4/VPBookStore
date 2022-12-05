@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using VPBookStore.Models;
+using VPBookStore.Models.ViewModels;
 
 namespace VPBookStore.Controllers
 {

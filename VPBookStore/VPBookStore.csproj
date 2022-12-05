@@ -15,4 +15,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.31" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VPBook.DataAccess\VPBook.DataAccess.csproj" />
+    <ProjectReference Include="..\VPBook.Models\VPBook.Models.csproj" />
+  </ItemGroup>
+
 </Project>
