@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using VPBook.DataAccess.Repository.IRepository;
 using VPBook.Models;
+using VPBook.Models.ViewModels;
 
 namespace VPBookStore.Areas.Admin.Controllers
 {
