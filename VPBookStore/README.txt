@@ -1,4 +1,4 @@
-﻿﻿In this assignment we are going to built Bookstore app again
+﻿In this assignment we are going to built Bookstore app again
 We are doing Part 1
 Doing in ASP.NEt Core Web Application
 After chnaging the authentication type we are about to create the project now.
@@ -61,7 +61,7 @@ Now we are going to implement the store procedure repository in Unit of work
 Added a new interface in IRepository
 and named it as ISP_Call.cs
 having error in ISP_Call.cs then solved by installing  NuGet package
-when having issue with Dynamic parameters then add nuget package Dapper with using statement
+
 Implemented new class in the repository
 Added new class in Repositroy, named it as SP_Call.cs
 Using appropriate statements we implemented ISP_Call interface.
