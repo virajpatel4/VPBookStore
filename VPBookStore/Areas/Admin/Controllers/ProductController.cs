@@ -67,36 +67,36 @@ namespace VPBookStore.Areas.Admin.Controllers
             {
                 string webRootPath = _hostEnvironment.WebRootPath;
                 var files = HttpContext.Request.Form.Files;
-                if (files.Count > 0)
-                {
-                    string fileName = Guid.NewGuid().ToString();
-                    var uploads = Path.Combine(webRootPath, @"images\products");
-                    var extension = Path.GetExtension(files[0].FileName);
+                //if (files.Count > 0)
+                //{
+                //    string fileName = Guid.NewGuid().ToString();
+                //    var uploads = Path.Combine(webRootPath, @"images\products");
+                //    var extension = Path.GetExtension(files[0].FileName);
 
-                    if (productVM.Product.ImageUrl != null)
-                    {
-                        // this is an edit and we need to remove old image
-                        var imagePath = Path.Combine(webRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
-                        if (System.IO.File.Exists(imagePath))
-                        {
-                            System.IO.File.Delete(imagePath);
-                        }
-                    }
-                    using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
-                    {
-                        files[0].CopyTo(filesStreams);
-                    }
-                    productVM.Product.ImageUrl = @"\images\products\" + fileName + extension;
-                }
-                else
-                {
-                    // update when they do not change the image
-                    if (productVM.Product.Id != 0)
-                    {
-                        Product objFromDb = _unitOfWork.Product.Get(productVM.Product.Id);
-                        productVM.Product.ImageUrl = objFromDb.ImageUrl;
-                    }
-                }
+                //    if (productVM.Product.ImageUrl != null)
+                //    {
+                //        // this is an edit and we need to remove old image
+                //        var imagePath = Path.Combine(webRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                //        if (System.IO.File.Exists(imagePath))
+                //        {
+                //            System.IO.File.Delete(imagePath);
+                //        }
+                //    }
+                //    using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                //    {
+                //        files[0].CopyTo(filesStreams);
+                //    }
+                //    productVM.Product.ImageUrl = @"\images\products\" + fileName + extension;
+                //}
+                //else
+                //{
+                //    // update when they do not change the image
+                //    if (productVM.Product.Id != 0)
+                //    {
+                //        Product objFromDb = _unitOfWork.Product.Get(productVM.Product.Id);
+                //        productVM.Product.ImageUrl = objFromDb.ImageUrl;
+                //    }
+                //}
 
                 if (productVM.Product.Id == 0)
                 {
