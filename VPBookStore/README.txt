@@ -10,7 +10,7 @@ adding javascript file in layout.cshtml file which was given
 After completing debugging 
 we can see the welcome page with Home and Privacy
 Now we will add some layouts and change some designs.
-on the site of Bootswatch.com I selected a theme called Darkly and copied the bootstrap.css file and applied to my project.
+on the site of Bootswatch.com I selected a theme called cerelum and copied the bootstrap.css file and applied to my project.
 By replacing the existing file of bootstrap to the new one which can be found under lib 
 Changed Nav bar
 run the project 
