@@ -102,4 +102,28 @@ having problems in migration as it says it doesnt match my migration assembly.
 changed migration assembly still it dosnt run
 20221205043630_AddProductToDb.cs
 as i do not know how to fix i am going to follow ppt and start the rest.
-2022-12-05
+
+added product controller 
+Added iwebhostenvironment call 
+created viewmodel in the models project 
+modified the productVM class and installed one package called Microsoft.AspNetCore.Mvc.ViewFeaturers
+modified product controller 
+commented out upsert method
+modified API call to include the category and covertype properties
+added an index view
+copied the index.cshtml code from categories and added a new file product.js
+modified the _Layout.cshtml to add a new link product
+run the application..............
+
+
+part 3
+created upsert.cs for products 
+added rick textbook to textarea inside the product with tiny cloud(for sweet alert)
+create new category button doesnt work
+added folder and sub folder in wwwroot
+configured the product upsert post action method 
+now time to uncomment that method
+applications run successfully but button doesnt work
+2022-12-08
+
+ 
